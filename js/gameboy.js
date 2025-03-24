@@ -80,7 +80,7 @@ bBtn.addEventListener('click', () => {
         currentPage = 4; // Niet trainen
         updateScreen();
         setTimeout(() => {
-            window.open('/keep-uppie/highscore.html'); // Open het hooghoudspel
+            window.open('/keep-uppie/highscore.html', '_blank'); // Open het hooghoudspel
         }, 2000); // Kleine vertraging om de tekst te laten zien
     }
 });
