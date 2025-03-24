@@ -87,23 +87,28 @@ function drawCountdown() {
     }
 }
 
-// Teken het scorebord
+// Teken het scorebord (responsive)
 function drawScoreboard() {
+    const boardWidth = canvas.width < 400 ? 100 : 140; // Kleinere breedte op mobiel
+    const boardHeight = 50;
+    const boardX = canvas.width - boardWidth - 10; // 10px marge rechts
+    const boardY = 10;
+
     ctx.fillStyle = '#000000';
-    ctx.fillRect(canvas.width - 150, 10, 140, 50);
+    ctx.fillRect(boardX, boardY, boardWidth, boardHeight);
     ctx.strokeStyle = '#666666';
     ctx.lineWidth = 2;
-    ctx.strokeRect(canvas.width - 150, 10, 140, 50);
+    ctx.strokeRect(boardX, boardY, boardWidth, boardHeight);
 
-    ctx.font = '14px monospace';
+    ctx.font = `${canvas.width < 400 ? 12 : 14}px monospace`; // Kleinere tekst op mobiel
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText('SCORE', canvas.width - 80, 25);
+    ctx.fillText('SCORE', boardX + boardWidth / 2, boardY + 20);
 
-    ctx.font = '28px monospace';
+    ctx.font = `${canvas.width < 400 ? 24 : 28}px monospace`;
     ctx.fillStyle = '#ffffff';
-    ctx.fillText(score.toString().padStart(4, '0'), canvas.width - 80, 45);
+    ctx.fillText(score.toString().padStart(4, '0'), boardX + boardWidth / 2, boardY + 40);
 }
 
 // Teken de game-over-tekst
