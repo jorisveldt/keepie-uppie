@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    border: 2px solid black;
+    background-color: #ffffff;
+    width: 800px; /* Standaardformaat op desktop */
+    height: 600px;
+    max-width: 100%; /* Responsive op mobiel */
+    max-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin: 10px 0;
+}

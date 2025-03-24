@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Game Boy Verhaal</title>
+    <link rel="stylesheet" href="css/gameboy.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gameboy">
+        <!-- Scherm -->
+        <div class="screen-area">
+            <div class="screen-bezel">
+                <div class="screen-header">DOT MATRIX WITH STEREO SOUND</div>
+                <div class="screen">
+                    <div class="pixel-art" id="pixelArt"></div>
+                    <div class="story-text" id="storyText"></div>
+                </div>
+                <div class="screen-footer">
+                    <span class="battery">BATTERY</span>
+                    <div class="power-led"></div>
+                    <span class="nintendo">Nintendo</span>
+                </div>
+            </div>
+        </div>
+        <!-- Knoppen -->
+        <div class="controls">
+            <div class="dpad">
+                <div class="dpad-base"></div>
+                <button id="up" class="dpad-btn">↑</button>
+                <button id="left" class="dpad-btn">←</button>
+                <button id="right" class="dpad-btn">→</button>
+                <button id="down" class="dpad-btn">↓</button>
+            </div>
+            <div class="ab-buttons">
+                <button id="a-btn" class="action-btn">A</button>
+                <button id="b-btn" class="action-btn">B</button>
+            </div>
+            <div class="select-start">
+                <button id="select-btn" class="small-btn">SELECT</button>
+                <button id="start-btn" class="small-btn">START</button>
+            </div>
+            <div class="speaker"></div>
+        </div>
+    </div>
+    <script src="js/gameboy.js"></script>
+</body>
+</html>
