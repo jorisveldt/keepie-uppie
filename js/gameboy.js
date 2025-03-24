@@ -81,7 +81,7 @@ bBtn.addEventListener('click', () => {
         updateScreen();
         setTimeout(() => {
             window.open('highscore.html', '_blank'); // Open het hooghoudspel in een nieuw venster
-        }, 1000); // Kleine vertraging om de tekst te laten zien
+        }, 3000); // Kleine vertraging om de tekst te laten zien
     }
 });
 

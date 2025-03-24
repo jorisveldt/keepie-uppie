@@ -70,7 +70,7 @@ body {
 
 /* Kale jongen met bal (basis) */
 .pixel-art.boy {
-    background-image: url('8-bit-soccer.jpg');
+    background-image: url('boy.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,7 +78,7 @@ body {
 }
 
 .pixel-art.choice {
-    background-image: url('boy.png');
+    background-image: url('choice.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,7 +95,7 @@ body {
 
 /* Wel trainen (voetballend poppetje) */
 .pixel-art.training {
-    background-image: url('https://via.placeholder.com/40x60?text=Footballer');
+    background-image: url('training.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -214,7 +214,7 @@ body {
 
 .small-btn {
     width: 60px;
-    height: 15px;
+    height: 30px;
     background-color: #444;
     color: #fff;
     border: none;
@@ -256,22 +256,6 @@ body {
     background-size: 40px 40px, 40px 20px;
     background-position: 0 0, 0 40px;
     background-repeat: no-repeat;
-    image-rendering: pixelated;
-}
-
-.pixel-art.choice::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    background: 
-        linear-gradient(to bottom, #0f380f 0%, #0f380f 20%, transparent 20%, transparent 100%),
-        linear-gradient(to right, transparent 0%, transparent 80%, #0f380f 80%, #0f380f 100%);
-    background-size: 40px 20px, 40px 20px;
-    background-position: 0 0, 0 20px;
     image-rendering: pixelated;
 }
 
