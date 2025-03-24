@@ -81,7 +81,7 @@ bBtn.addEventListener('click', () => {
         updateScreen();
         setTimeout(() => {
             window.open('/keep-uppie/highscore.html'); // Open het hooghoudspel
-        }, 3000); // Kleine vertraging om de tekst te laten zien
+        }, 2000); // Kleine vertraging om de tekst te laten zien
     }
 });
 
