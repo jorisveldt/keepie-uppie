@@ -80,7 +80,7 @@ bBtn.addEventListener('click', () => {
         currentPage = 4; // Niet trainen
         updateScreen();
         setTimeout(() => {
-            window.open('highscore.html', '_blank'); // Open het hooghoudspel in een nieuw venster
+            window.open('/highscore.html', '_blank'); // Open het hooghoudspel in een nieuw venster
         }, 3000); // Kleine vertraging om de tekst te laten zien
     }
 });
